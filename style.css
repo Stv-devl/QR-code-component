@@ -1,0 +1,83 @@
+/*****page setting*****/
+
+
+@font-face {
+    font-family:"Outfit";
+    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+  }
+  
+  :root{
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Outfit", sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: var(--Lightgray);
+    font-size: 15px;
+}
+/*****Set the card with flexbox*****/
+
+Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*****3 columns with flexbox*****/
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 320px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow:  17px 17px 24px -5px rgba(123,135,157,0.2);
+}
+/*****Size img =flexbox width -30px*****/
+.img {
+  background: url(./images/image-qr-code.png) center/cover;
+  width : 290px;
+  height : 290px;
+  border-radius: 12px;
+  margin: 15px 0 25px 0;
+}
+
+/*****Setting H2*****/
+.text1 {
+  color: var(--Darkblue);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 26px 20px 26px;
+}
+/*****Setting p*****/
+.text2 {
+  color: var(--Grayishblue);
+  font-weight: 400;
+  text-align: center;
+  padding: 0 26px 20px 26px;
+}
+
+/*****align footer*****/
+footer {
+text-align: center;
+font-size: 0.8rem;
+margin: 20px auto;
+}
+
+/*****Media querries => mobile design look similar?*****/
+
